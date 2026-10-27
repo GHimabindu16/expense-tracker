@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My Expense Tracker</h1>
+    <p>Track your money, manage your future.</p>
+  </header>
+
+  <main class="container">
+    <section class="summary">
+      <div class="summary-card balance">
+        <p>Available Balance</p>
+        <h2 id="balance">₹0.00</h2>
+      </div>
+
+      <div class="summary-card">
+        <p>Total Income</p>
+        <h2 id="income">₹0.00</h2>
+      </div>
+
+      <div class="summary-card">
+        <p>Total Expenses</p>
+        <h2 id="expenses">₹0.00</h2>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Add Transaction</h2>
+
+      <form id="transactionForm">
+        <label for="type">Transaction Type</label>
+        <select id="type" required>
+          <option value="expense">Expense</option>
+          <option value="income">Income</option>
+        </select>
+
+        <label for="description">Description</label>
+        <input
+          id="description"
+          type="text"
+          placeholder="Example: Bus travel"
+          maxlength="80"
+          required
+        >
+
+        <label for="category">Category</label>
+        <select id="category" required>
+          <option value="Food">Food</option>
+          <option value="Travel">Travel</option>
+          <option value="Shopping">Shopping</option>
+          <option value="Education">Education</option>
+          <option value="Salary">Salary</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="amount">Amount (₹)</label>
+        <input
+          id="amount"
+          type="number"
+          min="0.01"
+          max="100000000"
+          step="0.01"
+          placeholder="Enter amount"
+          required
+        >
+
+        <button type="submit">Add Transaction</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>Transaction History</h2>
+      <div id="transactionList"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>My Expense Tracker | Mini Project - Day 2</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My Expense Tracker</h1>
+    <p>Track your money, manage your future.</p>
+  </header>
+
+  <main class="container">
+    <section class="summary">
+      <div class="summary-card balance">
+        <p>Available Balance</p>
+        <h2 id="balance">₹0.00</h2>
+      </div>
+
+      <div class="summary-card">
+        <p>Total Income</p>
+        <h2 id="income">₹0.00</h2>
+      </div>
+
+      <div class="summary-card">
+        <p>Total Expenses</p>
+        <h2 id="expenses">₹0.00</h2>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Add Transaction</h2>
+
+      <form id="transactionForm">
+        <label for="type">Transaction Type</label>
+        <select id="type" required>
+          <option value="expense">Expense</option>
+          <option value="income">Income</option>
+        </select>
+
+        <label for="description">Description</label>
+        <input
+          id="description"
+          type="text"
+          placeholder="Example: Bus travel"
+          maxlength="80"
+          required
+        >
+
+        <label for="category">Category</label>
+        <select id="category" required>
+          <option value="Food">Food</option>
+          <option value="Travel">Travel</option>
+          <option value="Shopping">Shopping</option>
+          <option value="Education">Education</option>
+          <option value="Salary">Salary</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="amount">Amount (₹)</label>
+        <input
+          id="amount"
+          type="number"
+          min="0.01"
+          max="100000000"
+          step="0.01"
+          placeholder="Enter amount"
+          required
+        >
+
+        <button type="submit">Add Transaction</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>Transaction History</h2>
+      <div id="transactionList"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>My Expense Tracker | Mini Project - Day 2</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
